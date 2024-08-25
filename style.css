@@ -1,0 +1,231 @@
+:root {
+    --font: #1A5319;
+    --white: #ffffff;
+    --verde-claro: #D6EFD8;
+    --greey: #c5c5c5;
+    --medium-green: #80AF81;
+    --rgba: rgba(0,0,0,0.08);
+    --white-blue: #d8dfe8;
+    --medium-blue: #0a38718a;
+    --gray: #343a40;
+    --gree: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: var(--verde-claro);
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.textArea {
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+    color: var(--font);
+}
+
+.encriptar {
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--greey);
+    border-radius: 15px;
+    resize: none;
+    color: var(--font);
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+    color: var(--font);
+}
+
+.botones1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.btn_encriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--font);
+    border: 1px solid var(--font);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.btn_desencriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--dark-blue);
+    background: var(--medium-green);
+    border: 1px solid var(--font);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+    
+
+.desencriptar {
+    width: 270px;
+    height: 500px;
+    background: transparent;
+    box-shadow: 10px 24px 32px -8px var(--gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.contenedor_imagen {
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: transparent;
+}
+
+img {
+    max-width: 80%;
+}
+
+.evaluar {
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--font);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.texto_uno {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray);
+}
+
+.texto_dos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gree);
+}
+
+.btn_copiar {
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 70px;
+    padding: 10px;
+    border-top: 2px solid var(--font);
+    color: var(--gray);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1100px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .textArea {
+        order: 1;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .botones1 {
+        order: 2;
+        left: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .desencriptar {
+        order: 3;
+        width: 120%;
+        height: 100xp;
+        padding: 10px;
+    }
+}
